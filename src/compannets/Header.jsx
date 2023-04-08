@@ -3,6 +3,9 @@ import StarIcon from '@mui/icons-material/Star';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Header = ({item, handleClick}) => {
+
+  
+
 const {title, author, price, img} = item;
     return (
         <>
