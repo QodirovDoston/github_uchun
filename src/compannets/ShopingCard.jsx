@@ -6,7 +6,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
     const handleRemove = (id) => {
         setCart(cart.filter((item) => item.id !== id))
         setCart(cart);
-        // handlePrice()
+        handlePrice()
     }
     const handlePrice = () => {
         let count = 0;

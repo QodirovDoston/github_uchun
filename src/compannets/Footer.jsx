@@ -1,9 +1,9 @@
 import React from 'react'
-import { SlSocialInstagram, SlSocialTwitter } from "react-icons/sl";
-import { FaRegPaperPlane } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
+import { SlSocialInstagram}  from "react-icons/sl";
+import  {SlSocialTwitter}  from "react-icons/sl";
+import  {FaRegPaperPlane}  from "react-icons/fa";
+import  {FiFacebook} from "react-icons/fi";
 import LanguageIcon from '@mui/icons-material/Language';
-
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {

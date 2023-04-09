@@ -4,12 +4,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import axios from 'axios';
 import Card2 from './Card2';
 import Tiitle from './Tiitle';
-
 import { useTranslation } from 'react-i18next';
+import { Card } from 'react-bootstrap';
 
 const Header = ({ handleClick }) => {
     const { t } = useTranslation()
-    
     const [name, setName] = useState([])
     const getData = () => {
         axios.get('https://dbjsoninserver-production.up.railway.app/data')
@@ -23,16 +22,17 @@ const Header = ({ handleClick }) => {
     return (
         <>
             <div >
+                <Card/>
                 <Card2 />
                 <Tiitle />
-                <div className="sm:flex sm:gap-[490px] grid gap-4 grid-cols-1 sm:grid-rows-3 grid-rows-1 ">
+                <div className="sm:flex sm:gap-[490px]  ">
                     {name.map((item) => {
                         return (
                             <>
-                           <div className=' container mx-auto mt-7  grid gap-4 grid-cols-3 sm:grid-cols-1 flex-wrap '>
+                           <div className=' container mx-auto mt-7   '>
                             <div className=" sm:grid-cols-3  grid-cols-1  w-[390px] h-[480px]mt-7  bg-white rounded-[40px]">
                                 <FavoriteIcon className='m-4 active:text-red-400 focus:outline-none focus:ring' />
-                                <img className='mx-auto w-[280px] h-[300px] ' src={item.img} alt="d" />
+                                <img className='mx-auto w-[370px] h-[340px] ' src={item.img} alt="d" />
                                 <div className="flex justify-between m-6 ">
                                     <h3 className='font-semibold'>{item.title} </h3>
                                     <div className="d">

@@ -43,8 +43,7 @@ const NavbarPage = ({ setShow, size }) => {
                         <  LocalGroceryStoreIcon onClick={() => setShow(false)}/>
                         <span className='ml-[-25px] mt-[-10px] text-red-500'>{size}</span>
                     </div>
-                </div>
-            
+                </div> 
             </div>
         </>
     )

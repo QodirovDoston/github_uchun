@@ -1,7 +1,6 @@
 import React from 'react'
 import list from '../data'
 import Header from './Header'
-
 const Amazon = ({ handleClick }) => {
     return (
         <>
