@@ -1,6 +1,10 @@
 {
     "text":{
         "text_p":"Select phone model",
-        "nav":"Favorites"
+        "nav":"Favorites",
+        "fot":"анное",
+        "fot1":"Buy",
+        "fot2":"Избранное",
+        "fot3":"Избранное"
     }
 }

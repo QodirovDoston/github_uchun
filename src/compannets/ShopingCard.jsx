@@ -6,7 +6,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
     const handleRemove = (id) => {
         setCart(cart.filter((item) => item.id !== id))
         setCart(cart);
-        handlePrice()
+        // handlePrice()
     }
     const handlePrice = () => {
         let count = 0;
@@ -18,12 +18,13 @@ const Cart = ({ cart, setCart, handleChange }) => {
         handlePrice()
     })
     return (
-        <div className='container mx-auto mt-7  grid gap-4 grid-cols-3 '>
-            <div className=' grid gap-4 grid-cols-3'>
-                {cart?.map((item) => (
+        <>
+        <div className='container sm:mx-auto sm:ml-[190px] mt-7  grid gap-1 sm:grid-cols-5 grid-cols-1 ml-[25px] '>
+            {cart?.map((item) => (
+                <div className=' grid gap-4 grid-cols-3'>
                     <div className="bg-white w-[300px] h-[400px] rounded-[15px]" key={item.id}>
                         <div className="m-1">
-                            <img className='w-[300px] rounded-t-[15px]' src={item.img} alt="aa" />
+                            <img className=' rounded-t-[15px]  w-[280px] h-[220px]' src={item.img} alt="aa" />
                             <p className='text-center'>{item.title}</p>
                         </div>
                         <div className='text-center'>
@@ -32,19 +33,18 @@ const Cart = ({ cart, setCart, handleChange }) => {
                             <button className='border-none rounded-[10px] bg-gray-300 w-14 h-8' onClick={() => handleChange(item, -1)} >-</button>
                         </div>
                         <div className='text-center'>
-                            Price: <span>{item.price}</span>
+                            Price: <span>{ Number(item.price)}</span>
                         </div>
-                        <button className='text-center border-none rounded-[10px] bg-red-500 w-24 h-8 ' onClick={() => handleRemove(item.id)} >Remove</button>
-
+                        <button className='ml-[90px] border-none rounded-[10px] bg-red-500 w-24 h-8 ' onClick={() => handleRemove(item.id)} >Remove</button>
                     </div>
-                ))}
-            </div>
-            <div className="grid">
+                </div>
+            ))}
+        </div>
+            <div className="container sm:ml-[190px] mx-auto mt-6 grid ml-[26px]">
                 <span>Total Price of your Cart : </span>
                 <span>Rs - {price}</span>
             </div>
-        </div>
-
+        </>
     )
 }
 export default Cart;

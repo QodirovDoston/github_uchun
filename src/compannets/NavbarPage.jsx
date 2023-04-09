@@ -1,15 +1,13 @@
 import React from 'react'
-import logo from './img/logo.png'
-
 import '../compannets/Nav.css'
 import tel from './img/Vector (3).png'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import GTranslateSharpIcon from '@mui/icons-material/GTranslateSharp';
+import { PersonPinCircleOutlined } from '@mui/icons-material';
 
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-import { PersonPinCircleOutlined } from '@mui/icons-material';
 
 const NavbarPage = ({ setShow, size }) => {
     const { t } = useTranslation()
@@ -20,11 +18,13 @@ const NavbarPage = ({ setShow, size }) => {
     return (
         <>
             <div className='container mx-auto mt-7'>
-                <div className="flex justify-between ">
-                    <div className="flex">
-                        <h2 onClick={() => setShow(true)} className='font-bold text-[50px] mr-[80px] mt-[-20px]'>QPICK</h2>
-                        <img className='mr-[20px] w-[18px] h-5' src={tel} alt="" />
-                        <h2 className='text-[15px]'> {t('text.text_p')}</h2>
+                <div className="flex sm:justify-between justify-center ">
+                    <div className="flex  ">
+                        <h2 onClick={() => setShow(true)} className='font-bold text-[50px] sm:mr-[80px] mr-[55px] mt-[-20px]'>QPICK</h2>
+                        <div className="sm:flex  hidden ">
+                        <img className='sm:mr-[20px]  w-[18px] h-6' src={tel} alt="" />
+                        <h2 className='text-[19px] '> {t('text.text_p')}</h2>
+                        </div>
                     </div>
                     <div  className="gap-4 flex ">
                         <div class="dropdown">
@@ -32,20 +32,19 @@ const NavbarPage = ({ setShow, size }) => {
                                 <GTranslateSharpIcon className='hidden  ' />
                             </button>
                             <div class="dropdown-content">
-                                <a ><PersonPinCircleOutlined />Войти</a>
-                                <a ><FavoriteBorderIcon />  Избранное</a>
-                                <a  onClick={() => handlClick("rus")}>Russian</a>
-                                <a  onClick={() => handlClick("uz")}>Uzbek</a>
-                                <a  onClick={() => handlClick("eng")}> English</a>
+                                <p className='m-2'><PersonPinCircleOutlined />Войти</p>
+                                <p className='m-2'><FavoriteBorderIcon />  Избранное</p>
+                                <p className='m-2' onClick={() => handlClick("rus")}>Russian</p>
+                                <p className='m-2' onClick={() => handlClick("uz")}>Uzbek</p>
+                                <p className='m-2' onClick={() => handlClick("eng")}> English</p>
                             </div>
                         </div>
                         <FavoriteBorderIcon />
                         <  LocalGroceryStoreIcon onClick={() => setShow(false)}/>
-                        <span className='ml-[-25px] mt-[-10px] text-white bg-red-500 rounded-[40px] h-5 w-4 '>{size}</span>
+                        <span className='ml-[-25px] mt-[-10px] text-red-500'>{size}</span>
                     </div>
                 </div>
-                <h1 className='text-[30px] mt-[46px] font-medium'>{t("text.nav")}</h1>
-                <h1 className='text-[30px] mt-[46px] font-medium text-gray-400'>Наушники</h1>
+            
             </div>
         </>
     )
