@@ -1,6 +1,5 @@
 import React from 'react'
-import { SlSocialInstagram}  from "react-icons/sl";
-import  {SlSocialTwitter}  from "react-icons/sl";
+import { SlSocialInstagram ,SlSocialTwitter}  from "react-icons/sl";
 import  {FaRegPaperPlane}  from "react-icons/fa";
 import  {FiFacebook} from "react-icons/fi";
 import LanguageIcon from '@mui/icons-material/Language';
