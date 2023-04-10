@@ -25,7 +25,7 @@ const Cardc = (handleClick) => {
                 {name.map((item) => {
                     return (
                         <>
-                            <Col className='sm:mb-[-600px] mb-[0px]'>
+                            <Col key={item.id}  className='sm:mb-[-600px] mb-[0px]'>
                                 <div className="  sm:w-[390px] w-[290px]  sm:h-[590px] h-[390px] mt-7  bg-white rounded-[40px]">
                                     <FavoriteIcon className='m-4 active:text-red-400 focus:outline-none focus:ring' />
                                     <img className='mx-auto sm:w-[370px] w-[270px] sm:h-[300px] h-[200px] ' src={item.img} alt="d" />
@@ -43,14 +43,11 @@ const Cardc = (handleClick) => {
                                     </div>
                                 </div>
                             </Col>
-
                         </>
                     )
                 })}
             </Row>
         </div>
-
-
     )
 }
 

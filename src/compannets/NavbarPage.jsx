@@ -22,28 +22,33 @@ const NavbarPage = ({ setShow, size }) => {
                     <div className="flex  ">
                         <h2 onClick={() => setShow(true)} className='font-bold sm:text-[50px] text-[30px] sm:mr-[80px] mr-[45px] mt-[-20px]'>QPICK</h2>
                         <div className="sm:flex  hidden ">
-                        <img className='sm:mr-[20px]  w-[18px] h-6' src={tel} alt="" />
-                        <h2 className='text-[19px] '> {t('text.text_p')}</h2>
+                            <img className='sm:mr-[20px]  w-[18px] h-6' src={tel} alt="" />
+                            <h2 className='text-[19px] '> {t('text.text_p')}</h2>
                         </div>
                     </div>
-                    <div  className="gap-4 flex sm:mt-0 mt-[-13px]">
-                        <div class="dropdown ">
-                            <button class="dropbtn ">
+                    <div className="gap-4 flex sm:mt-0 mt-[-13px]">
+                        <div className="dropdown ">
+                            <button className="dropbtn ">
                                 <GTranslateSharpIcon className='hidden  ' />
                             </button>
-                            <div class="dropdown-content ">
-                                <p className='m-2'><PersonPinCircleOutlined />Войти</p>
-                                <p className='m-2'><FavoriteBorderIcon />  Избранное</p>
+                            <div className="dropdown-content ">
+                                <p className='m-2'><PersonPinCircleOutlined />  Apple</p>
+                                <p className='m-2'>iPhone 12</p>
+                                <p className='m-2'>iPhone 12 Max</p>
+                                <p className='m-2'>iPhone 13 Max</p>
+                                <p className='m-2'>iPhone 13 Pro Max</p>
+                                <p className='m-2'>iPhone 14</p>
+                                <p className='m-2'><FavoriteBorderIcon />  Language</p>
                                 <p className='m-2' onClick={() => handlClick("rus")}>Russian</p>
                                 <p className='m-2' onClick={() => handlClick("uz")}>Uzbek</p>
                                 <p className='m-2' onClick={() => handlClick("eng")}> English</p>
                             </div>
                         </div>
                         <FavoriteBorderIcon />
-                        <LocalGroceryStoreIcon onClick={() => setShow(false)}/>
+                        <LocalGroceryStoreIcon onClick={() => setShow(false)} />
                         <span className='ml-[-25px] mt-[-10px] text-red-500'>{size}</span>
                     </div>
-                </div> 
+                </div>
             </div>
         </>
     )
