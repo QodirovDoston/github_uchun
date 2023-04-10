@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Col, Row } from 'react-bootstrap';
 
 const Cardc = (handleClick) => {
-    const [age, setName] = useState([])
+    const [name, setName] = useState([])
     const getData = () => {
         axios.get('https://dbjsoninserver-production.up.railway.app/data')
             .then((data) => {
@@ -19,7 +19,7 @@ const Cardc = (handleClick) => {
 
         <div className='container '>
             <Row className='sm:grid gap-[599px] grid-cols-3 grid-rows-3 sm:ml-0 ml-1 '>
-                {age.map((item) => {
+                {name.map((item) => {
                     return (
                         <>
                             <Col className='sm:mb-[-600px] mb-[0px]'>
