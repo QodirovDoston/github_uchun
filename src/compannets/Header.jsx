@@ -10,7 +10,9 @@ const Header = () => {
           <div className='container '>
                <Orachora  />
                <Card2 />
+
                <Tiitle />
+               
                <Cardc />
           </div>
 
