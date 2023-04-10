@@ -1,7 +1,9 @@
 import React from 'react'
-// import { SlSocialInstagram ,SlSocialTwitter}  from "react-icons/sl";
-import  {FaRegPaperPlane}  from "react-icons/fa";
-import  {FiFacebook} from "react-icons/fi";
+import  SlSocialInstagram from "react-icons/sl";
+import  SlSocialTwitter  from "react-icons/sl";
+
+import FaRegPaperPlane from "react-icons/fa";
+import FiFacebook from "react-icons/fi";
 import LanguageIcon from '@mui/icons-material/Language';
 import { useTranslation } from 'react-i18next';
 
@@ -29,14 +31,14 @@ const Footer = () => {
                                 <h2 className='sm:text-black hover:text-yellow-500 text-[10px] sm:text-[20px] font-medium'>{t("text.fot8")}</h2>
                             </div>
                         </div>
-                            <div className="sm:gap-8 gap-1 sm:mt-[60px] mt-[140px] sm:mr-[70px] mr-[10px]  sm:ml-[0px] ml-[-120px] flex">
-                                {/* <SlSocialTwitter /> */}
-                                <FiFacebook />
-                                <FaRegPaperPlane />
-                                <FiFacebook />
-                                <FaRegPaperPlane />
-                                {/* <SlSocialInstagram  /> */}
-                            </div>
+                        <div className="sm:gap-8 gap-1 sm:mt-[60px] mt-[140px] sm:mr-[70px] mr-[10px]  sm:ml-[0px] ml-[-120px] flex">
+                            <SlSocialTwitter />
+                            <FiFacebook />
+                            <FaRegPaperPlane />
+                            <FiFacebook />
+                            <FaRegPaperPlane />
+                            <SlSocialInstagram />
+                        </div>
                     </div>
                 </div>
             </div>
