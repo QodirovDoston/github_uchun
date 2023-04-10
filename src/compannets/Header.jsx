@@ -6,7 +6,7 @@ import Tiitle from './Tiitle';
     
 const Header = () => {
  
-    return (
+return (
             <div className='container '>
        <Orachora/>
        <Card2/>
