@@ -1,5 +1,5 @@
 import React from 'react'
-import { SlSocialInstagram ,SlSocialTwitter}  from "react-icons/sl";
+// import { SlSocialInstagram ,SlSocialTwitter}  from "react-icons/sl";
 import  {FaRegPaperPlane}  from "react-icons/fa";
 import  {FiFacebook} from "react-icons/fi";
 import LanguageIcon from '@mui/icons-material/Language';
@@ -30,10 +30,12 @@ const Footer = () => {
                             </div>
                         </div>
                             <div className="sm:gap-8 gap-1 sm:mt-[60px] mt-[140px] sm:mr-[70px] mr-[10px]  sm:ml-[0px] ml-[-120px] flex">
-                                <SlSocialTwitter />
+                                {/* <SlSocialTwitter /> */}
                                 <FiFacebook />
                                 <FaRegPaperPlane />
-                                <SlSocialInstagram  />
+                                <FiFacebook />
+                                <FaRegPaperPlane />
+                                {/* <SlSocialInstagram  /> */}
                             </div>
                     </div>
                 </div>
