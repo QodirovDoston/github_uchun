@@ -1,10 +1,16 @@
 {
-    "text":{
-        "text_p":"Select phone model",
-        "nav":"Favorites",
-        "fot":"анное",
-        "fot1":"Buy",
-        "fot2":"Избранное",
-        "fot3":"Избранное"
+    "text": {
+        "text_p": "Select phone model",
+        "nav": "Favorites",
+        "quloq": "Wireless headphones",
+        "fot1": "Buy",
+        "fot2": "Favourites",
+        "fot3": "Basket",
+        "fot4": "Contacts",
+        "fot5": "Terms of service",
+        "fot6": "Каz",
+        "fot7": "Rus",
+        "fot8": "Eng",
+        "fot9": "Enter"
     }
 }

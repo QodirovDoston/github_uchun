@@ -1,13 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 function Tiitle() {
+  const { t } = useTranslation()
   return (
-    // <div className='ml-4'>
       <div className='container mx-auto mt-7  '>
-        <h1 className='sm:text-[30px] text-[28px] mt-[46px] font-medium text-gray-400'>Наушники</h1>
-      {/* </div> */}
+        <h1 className='sm:text-[30px] text-[28px] mt-[46px] font-medium text-gray-400'>{t("text.quloq")}</h1>
     </div>
   )
 }
-
 export default Tiitle

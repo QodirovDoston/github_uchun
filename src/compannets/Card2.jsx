@@ -3,8 +3,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import StarIcon from '@mui/icons-material/Star';
 import axios from 'axios';
 import { Col, Row } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 const Cardc = (handleClick) => {
+    const { t } = useTranslation()
+
     const [age, setName] = useState([])
     const getData = () => {
         axios.get('https://dbjsoninserver-production.up.railway.app/data')
@@ -36,7 +39,7 @@ const Cardc = (handleClick) => {
                                     <div className="flex sm:gap-2 gap-0 sm:m-4 m-1">
                                         <StarIcon className='text-yellow-500 ' />
                                         <h4 className='text-gray-500'>4.7</h4>
-                                        <button onClick={() => handleClick(item)} className=' sm:ml-[180px]  ml-[160px]  bg-cyan-400 sm:w-[80px] w-[60px] text-white  sm:h-[31px]  h-[28px] rounded-[4px]'>t</button>
+                                        <button onClick={() => handleClick(item)} className=' sm:ml-[180px]  ml-[120px]  bg-cyan-400 sm:w-[80px] w-[100px] text-white  sm:h-[31px]  h-[28px] rounded-[4px]'>{t('text.fot1')}</button>
                                     </div>
                                 </div>
                             </Col>
