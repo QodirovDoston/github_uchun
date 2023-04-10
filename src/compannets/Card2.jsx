@@ -6,16 +6,16 @@ import { Col, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 const Cardc = () => {
-const [data, setData] =useState()
-const handlehClick =() =>{
-    const dataId = (id) => {
-        axios.get(`https://dbjsoninserver-production.up.railway.app/data/${id}`)
-            .then((data) => {
-                setData(data.data)
-                console.log(data.id);
-     })
-    }
-}
+// const [data, setData] =useState()
+// const handlehClick =() =>{
+//     const dataId = (id) => {
+//         axios.get(`https://dbjsoninserver-production.up.railway.app/data/${id}`)
+//             .then((data) => {
+//                 setData(data.data)
+//                 console.log(data.id);
+//      })
+//     }
+// }
 
     const { t } = useTranslation()
     const [age, setName] = useState([])
@@ -49,7 +49,7 @@ const handlehClick =() =>{
                                     <div className="flex sm:gap-2 gap-0 sm:m-4 m-1">
                                         <StarIcon className='text-yellow-500 ' />
                                         <h4 className='text-gray-500'>4.7</h4>
-                                        <button onClick={() => handlehClick(data)} className=' sm:ml-[180px]  ml-[120px] sm:w-[100px] w-[100px] text-white  sm:h-[41px]  h-[28px] rounded-[4px] 
+                                        <button  className=' sm:ml-[180px]  ml-[120px] sm:w-[100px] w-[100px] text-white  sm:h-[41px]  h-[28px] rounded-[4px] 
                                         transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...'>{t('text.fot1')}</button>
                                     </div>
                                 </div>
