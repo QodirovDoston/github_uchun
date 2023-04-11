@@ -1,9 +1,4 @@
 import React from 'react'
-// import  SlSocialInstagram from "react-icons/sl";
-// import  SlSocialTwitter  from "react-icons/sl";
-
-// import FaRegPaperPlane from "react-icons/fa";
-// import FiFacebook from "react-icons/fi";
 import LanguageIcon from '@mui/icons-material/Language';
 import { useTranslation } from 'react-i18next';
 
@@ -11,9 +6,9 @@ const Footer = () => {
     const { t } = useTranslation()
     return (
         <>
-            <div className='container mx-auto  mt-10 mb-[-20px]'>
+            <div className='container mx-auto align-sub  mt-[800px] '>
                 <div className="bg-white rounded-t-lg sm:h-[190px] h-[180px]  border-x-fuchsia-200">
-                    <div className="flex sm:justify-between justify-center sm:gap-1 gap-0  sm:ml-[0] ml-[-50px] ">
+                    <div className="flex sm:justify-between justify-center sm:gap-1 gap-0  sm:ml-[0] ml-[-50px]  ">
                         <div className="sm:mr-3 mr-[10px] ">
                             <h1 className=' font-bold sm:mt-[65px] mt-[49px] sm:ml-[25px] ml-[1px] sm:text-[40px] text-[18px]'>QPICK</h1>
                         </div>
@@ -32,12 +27,11 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="sm:gap-8 gap-1 sm:mt-[60px] mt-[140px] sm:mr-[70px] mr-[10px]  sm:ml-[0px] ml-[-120px] flex">
-                            {/* <SlSocialTwitter />
-                            <FiFacebook />
-                            <FaRegPaperPlane />
-                            <FiFacebook />
-                            <FaRegPaperPlane />
-                            <SlSocialInstagram /> */}
+                        <LanguageIcon className='sm:mt-[0px] mt-[-8px]' />
+                        <LanguageIcon className='sm:mt-[0px] mt-[-8px]' />
+                        <LanguageIcon className='sm:mt-[0px] mt-[-8px]' />
+                        <LanguageIcon className='sm:mt-[0px] mt-[-8px]' />
+                         
                         </div>
                     </div>
                 </div>

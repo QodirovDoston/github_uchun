@@ -7,12 +7,10 @@ import Tiitle from './Tiitle';
 const Header = () => {
 
      return (
-          <div className='container '>
+          <div className='container flex-wrap '>
                <Orachora  />
                <Card2 />
-
                <Tiitle />
-               
                <Cardc />
           </div>
 

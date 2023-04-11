@@ -26,7 +26,7 @@ const Cardc = (handleClick) => {
                     return (
                         <>
                             <Col key={item.id} className='sm:mb-[-600px] mb-[0px]'>
-                                <div className="  sm:w-[390px] w-[290px]  sm:h-[590px] h-[390px] mt-7  bg-white rounded-[40px] shadow-2xl">
+                                <div className="  sm:w-[390px] w-[290px]  sm:h-[550px] h-[390px] mt-7  bg-white rounded-[40px] shadow-2xl">
                                     <FavoriteIcon className='m-4 active:text-red-400 focus:outline-none focus:ring' />
                                     <img className='mx-auto sm:w-[370px] w-[270px] sm:h-[300px] h-[200px] ' src={item.img} alt="d" />
                                     <div className="flex justify-between sm:m-4 m-1 ">
